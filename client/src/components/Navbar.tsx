@@ -1,4 +1,9 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
+import { BsFacebook } from 'react-icons/bs'
+import { BiLogoInstagramAlt } from 'react-icons/bi'
+import { AiFillTwitterCircle } from 'react-icons/ai'
+
+
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -6,19 +11,27 @@ const Navbar = () => {
     const [search, setSearch] = useState(false);
 
     return (
-        <div className="dark:bg-gray-900 fixed w-full ">
+        <div className="dark:bg-gray-900 fixed w-full bg-red-500">
             <div className="2xl:container 2xl:mx-auto md:py-5 lg:px-20 md:px-6 p-4">
-                <div className="flex items-center justify-between">
-                    <div className="lg:w-3/12">
-                        <div className="w-7/12 hidden lg:flex items-center space-x-3 border-b border-gray-200 pb-2">
-                            <div>
-                                <svg className="fill-stroke text-white-600 dark:text-white" width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M19.0004 19.0004L14.6504 14.6504" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </div>
-                            <input type="text" placeholder="Search for products" className="bg-transparent text-sm text-white focus:outline-none" />
+                <div className="flex  justify-between">
+                    <div className="lg:w-3/12 ">
+                        <div className='flex gap-2'>
+                            <a aria-label="facebook" className="hidden md:block focus:outline-none text-white dark:text-white focus:ring-2 focus:ring-gray-800 rounded  p-0.5" href="javascript:void(0)">
+                                <BsFacebook size={20} />
+                            </a>
+                            <a aria-label="facebook" className="hidden md:block focus:outline-none text-white dark:text-white focus:ring-2 focus:ring-gray-800 rounded  p-0.5" href="javascript:void(0)">
+                                <BiLogoInstagramAlt size={23} />
+                            </a>
+                            <a aria-label="facebook" className="hidden md:block focus:outline-none text-white dark:text-white focus:ring-2 focus:ring-gray-800 rounded  p-0.5" href="javascript:void(0)">
+                                <AiFillTwitterCircle size={23} />
+                            </a>
+                            <a aria-label="facebook" className="hidden md:block focus:outline-none text-white dark:text-white focus:ring-2 focus:ring-gray-800 rounded  p-0.5" href="javascript:void(0)">
+                                <AiFillTwitterCircle size={23} />
+                            </a>
+
                         </div>
+
+
                         <button onClick={() => setShowMenu(true)} aria-label="Open Menu" className="text-white dark:text-white hidden md:block lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-800 rounded">
                             <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 18L4 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -26,12 +39,7 @@ const Navbar = () => {
                                 <path d="M18 6L4 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </button>
-                        <button onClick={() => setSearch(true)} aria-label="Search Menu" className="text-white dark:text-white md:hidden focus:outline-none focus:ring-2 focus:ring-gray-800 rounded hover:bg-gray-100 p-0.5">
-                            <svg className="fill-stroke" width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M18.9984 19.0004L14.6484 14.6504" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </button>
+
                     </div>
                     <div className="lg:w-6/12 flex flex-col justify-center items-center space-y-3.5">
                         <div aria-label="Luxiwood. Logo" role="img" className="cursor-pointer">
@@ -49,6 +57,7 @@ const Navbar = () => {
                                 />
                             </svg>
                         </div>
+                        <hr className='text-white w-full font-bold' />
                         <div className="hidden lg:block">
                             <ul className="flex items-center space-x-10">
                                 <li>
@@ -79,7 +88,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="lg:w-3/12 flex justify-end items-center space-x-4">
+                    <div className="lg:w-3/12 flex justify-end  space-x-4">
                         <a aria-label="view favourites" className="hidden md:block focus:outline-none text-white dark:text-white focus:ring-2 focus:ring-gray-800 rounded hover:bg-gray-100 p-0.5" href="javascript:void(0)">
                             <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
