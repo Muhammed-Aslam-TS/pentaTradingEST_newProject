@@ -1,20 +1,21 @@
 import Count from "./Count";
 import image from "../assets/images/about.png";
-import aboutBg from "../assets/images/about background.jpg";
-
+import aboutBg from "../assets/images/aboutBackground.jpg";
 
 const About = () => {
   return (
     <div>
       <div
-        style={{ backgroundImage: `url(${aboutBg})` }}
-        className="md:flex w-full h-screen items-center justify-center gap-36"
+        style={{
+          backgroundImage: `url(${aboutBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className=" md:flex w-full h-screen items-center justify-center gap-36"
       >
-        {/* <div className="md:bg-gray-500 w-80 h-96 md:rotate-12 rounded-lg flex justify-center"> */}
         <div className="flex md:shadow-none sm:justify-center sm:shadow-2xl w-80 h-96 md:justify-end mt-7 ms-11 ">
-          <img className="h-90 w-72 rounded-lg" src={image} alt="" srcSet="" />
+          <img className="h-[500px] w-[700px]" src={image} alt="" srcSet="" />
         </div>
-        {/* </div> */}
 
         <div className="mt-10 ms-8 me-3">
           <div>
@@ -45,9 +46,7 @@ const About = () => {
               Maecenas ligula massa, varius a, semper congue, euismod non, mi.
             </p>
           </div>
-
           <Count />
-
           <div className="flex justify-start">
             <button className="bg-gray-500 text-white p-3 rounded-lg mt-12 ">
               learn more
