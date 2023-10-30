@@ -14,7 +14,7 @@ const About = () => {
         className=" md:flex w-full h-screen items-center justify-center gap-36"
       >
         <div className="flex md:shadow-none sm:justify-center sm:shadow-2xl w-80 h-96 md:justify-end mt-7 ms-11 ">
-          <img className="h-[500px] w-[700px]" src={image} alt="" srcSet="" />
+          <img className="h-full w-full" src={image} alt="" srcSet="" />
         </div>
 
         <div className="mt-10 ms-8 me-3">
