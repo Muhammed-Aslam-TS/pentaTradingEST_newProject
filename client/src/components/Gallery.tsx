@@ -1,7 +1,7 @@
 
 const Gallery = () => {
   return (
-    <div className="">
+    <div className="pt-10">
       <h1 className="flex justify-center md:mt-16 text-2xl font-bold">
         PROJECTS GALLERY
       </h1>
@@ -64,7 +64,8 @@ const Gallery = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
+
+        <button className="hover:text-black hover:bg-white hover:border hover:border-black sm:w-auto w-full mt-8 m-7 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
           More Projects
           <div className="ml-2 mt-0.5">
             <svg
