@@ -109,7 +109,7 @@ const Banner = () => {
         <div className="absolute top-0 left-0 h-3/4 w-8/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
       </div>
 
-      <div className="lg:hidden h-screen z-10 flex flex-col w-full px-6">
+      <div className="lg:hidden mt-18 lg:mt-0 h-screen z-10 flex flex-col w-full ">
         <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay>
           <div>
             <img
