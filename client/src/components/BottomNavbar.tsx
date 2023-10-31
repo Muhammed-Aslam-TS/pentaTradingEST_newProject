@@ -79,7 +79,7 @@ const BottomNavbar = () => {
                                 </a>
                             </li>
                            <li className='nav-item'>
-                                <a className="px-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
+                                <a className="ps-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
                                     href="#pablo"
                                      onClick={() => handleOptionClick('contact')}
                                 >

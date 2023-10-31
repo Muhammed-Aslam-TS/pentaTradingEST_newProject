@@ -59,11 +59,9 @@ const Banner = () => {
             className="w-1/2 "
             style={{
               borderRadius: "5px",
-              boxShadow: "rgba(40, 36, 36, 0.2) -10px 10px 10px",
+              boxShadow: "rgba(40, 36, 36, 0.25) -10px 10px 5px",
             }}
           >
-            {/* <img src={banner} alt="Your Image" className="object-cover h-full w-full" 
-          style={{ borderRadius: "5px",  boxShadow: "rgba(40, 36, 36, 0.2) -10px 10px 10px" }}/>          */}
             <Carousel
               showStatus={false}
               showThumbs={false}
@@ -108,13 +106,10 @@ const Banner = () => {
             </Carousel>
           </div>
         </div>
-        <div className="absolute top-0 left-0 h-3/4 w-10/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
+        <div className="absolute top-0 left-0 h-3/4 w-8/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
       </div>
 
       <div className="lg:hidden h-screen z-10 flex flex-col w-full px-6">
-        {/* <div>
-            <img src={banner2} alt="Your Image" className="object-cover h-full w-full"/>
-          </div> */}
         <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay>
           <div>
             <img
@@ -199,7 +194,7 @@ const Banner = () => {
 
       <div className="flex flex-col lg:flex-row items-stretch justify-between lg:px-0 px-6 2xl:mx-auto 2xl:container">
         <div className="z-30 relative lg:w-1/2">
-          <div className="hidden bg-gray-300 w-full lg:w-10/12 lg:h-full lg:flex justify-end items-center">
+          <div className="hidden bg-gray-200 w-full lg:w-10/12 lg:h-full lg:flex justify-end items-center">
             <div className="w-full lg:w-auto lg:-mr-32">
               <img
                 src="https://i.ibb.co/YQjkqWr/juan-burgos-FIy-XGZ1q0mc-unsplash-1.png"
@@ -208,7 +203,7 @@ const Banner = () => {
               />
             </div>
           </div>
-          <div className="absolute top-0  bg-gray-300 md:h-96 w-full hidden md:block lg:hidden"></div>
+          <div className="absolute top-0  bg-gray-200 md:h-96 w-full hidden md:block lg:hidden"></div>
           <div className="w-full h-full lg:hidden">
             <img
               src="https://i.ibb.co/YQjkqWr/juan-burgos-FIy-XGZ1q0mc-unsplash-1.png"
@@ -217,7 +212,7 @@ const Banner = () => {
             />
           </div>
         </div>
-        <div className="bg-gray-300 lg:w-1/2 lg:ml-12 lg:p-14 p-8 flex items-center">
+        <div className="bg-gray-200 lg:w-1/2 lg:ml-12 lg:p-14 p-8 flex items-center">
           <div>
             <h1 className="md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 w-full xl:text-6xl sm:text-5xl text-4xl font-semibold text-gray-800 capitalize">
               Modern Interior Decor
