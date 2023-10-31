@@ -1,4 +1,11 @@
-import banner from '../assets/images/banner2.jpg'
+import banner1 from '../assets/images/banner1.jpeg'
+import banner2 from '../assets/images/banner2.jpg'
+import banner3 from '../assets/images/banner3.jpg'
+import banner4 from '../assets/images/banner4.jpg'
+import banner5 from '../assets/images/banner5.webp'
+
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = () => {
   return (
@@ -22,18 +29,54 @@ const Banner = () => {
           </div>
         </button>
         </div>
-        <div className="w-1/2 ">
-          <img src={banner} alt="Your Image" className="object-cover h-full w-full" 
-          style={{ borderRadius: "5px",  boxShadow: "rgba(40, 36, 36, 0.2) -10px 10px 10px" }}/>         
+        <div className="w-1/2 " style={{ borderRadius: "5px",  boxShadow: "rgba(40, 36, 36, 0.2) -10px 10px 10px" }}>
+          {/* <img src={banner} alt="Your Image" className="object-cover h-full w-full" 
+          style={{ borderRadius: "5px",  boxShadow: "rgba(40, 36, 36, 0.2) -10px 10px 10px" }}/>          */}
+          <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay 
+           >
+          <div>
+            <img src={banner1} alt="Your Image 1" className="object-contain h-full w-full" />
+          </div>
+          <div>
+            <img src={banner2} alt="Your Image 2" className="object-cover h-full w-full" />
+          </div>
+          <div>
+            <img src={banner3} alt="Your Image 2" className="object-cover h-full w-full" />
+          </div>
+          <div>
+            <img src={banner4} alt="Your Image 2" className="object-cover h-full w-full" />
+          </div>
+          <div>
+            <img src={banner5} alt="Your Image 2" className="object-cover h-full w-full" />
+          </div>
+        </Carousel>
         </div>
       </div>
       <div className="absolute top-0 left-0 h-3/4 w-10/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
     </div>
 
         <div className="lg:hidden h-screen z-10 flex flex-col w-full px-6">
+          {/* <div>
+            <img src={banner2} alt="Your Image" className="object-cover h-full w-full"/>
+          </div> */}
+          <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay 
+           >
           <div>
-            <img src={banner} alt="Your Image" className="object-cover h-full w-full"/>
+            <img src={banner1} alt="Your Image 1" className="object-contain h-full w-full" />
           </div>
+          <div>
+            <img src={banner2} alt="Your Image 2" className="object-cover h-full w-full" />
+          </div>
+          <div>
+            <img src={banner3} alt="Your Image 2" className="object-cover h-full w-full" />
+          </div>
+          <div>
+            <img src={banner4} alt="Your Image 2" className="object-cover h-full w-full" />
+          </div>
+          <div>
+            <img src={banner5} alt="Your Image 2" className="object-cover h-full w-full" />
+          </div>
+        </Carousel>
           <div className="p-8 mt-5 bg-gray-200">
             <p className='text-3xl py-3'>Lorem Ipsum is simply dummy<br /> text of the printing and <br />typesetting industry.</p>
             <div className='py-5'>

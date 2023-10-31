@@ -12,7 +12,7 @@ const BottomNavbar = () => {
    
     return (
         <>
-            <nav className="relative flex flex-wrap items-center justify-between  py-5 ">               
+            <nav className="fixed top-8 z-50 w-full flex flex-wrap items-center justify-between  py-5 ">               
             {/* <nav className="fixed top-8 z-50 w-full flex flex-wrap items-center justify-between py-5"> */}
                 <div className=" max-w-screen-xl container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
