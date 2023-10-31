@@ -1,17 +1,17 @@
-import Count from "./Count";
+// import Count from "./Count";
 import image from "../assets/images/about.png";
 import aboutBg from "../assets/images/aboutBackground.jpg";
 
 const About = () => {
   return (
-    <div>
+    <div className="">
       <div
         style={{
           backgroundImage: `url(${aboutBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className=" md:flex w-full h-screen items-center justify-center gap-36"
+        className="container md:flex w-full h-auto items-center justify-center gap-36"
       >
         <div className="flex md:shadow-none sm:justify-center sm:shadow-2xl w-80 h-96 md:justify-end mt-7 ms-11 ">
           <img className="h-full w-full" src={image} alt="" srcSet="" />
@@ -62,7 +62,7 @@ const About = () => {
               etc. with supply and installation with a qualified technical team.
             </p>
           </div>
-          <Count />
+          {/* <Count /> */}
           <div className="flex justify-start">
             <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
               More Details

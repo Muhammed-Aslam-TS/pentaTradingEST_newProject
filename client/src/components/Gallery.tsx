@@ -1,7 +1,7 @@
 
 const Gallery = () => {
   return (
-    <div>
+    <div className="">
       <h1 className="flex justify-center md:mt-16 text-2xl font-bold">
         PROJECTS GALLERY
       </h1>
