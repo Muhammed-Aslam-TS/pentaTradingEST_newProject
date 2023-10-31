@@ -1,44 +1,68 @@
+
+
+
 import CountUp from "react-countup";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Count = () => {
   return (
-    <div>
-      <div className="flex flex-row sm:flex-col-2 justify-center columns-2 gap-3 mt-8 ">
-        <div className="basis-1/4 flex flex-col justify-center items-center w-24 h-16 ">
-          <CountUp
-            className="font-bold text-3xl"
-            start={0}
-            end={250}
-            duration={3}
-          />
-          <h1>Happy clients</h1>
+    <div className="md:flex flex-col-2">
+      <div className="w-full gap-28 sm:flex sm:justify-center sm:items-center p-4 sm:ps-4 sm:pe-4 cursor-pointer">
+        <div className="flex flex-col w-full items-center mb-8 sm:mb-0 sm:flex-col-2">
+          <div className="mb-2 w-full flex items-center justify-center"> {/* Added a flex container */}
+            <FontAwesomeIcon icon={faPlus} size="lg" />
+            <CountUp
+              className="font-bold text-3xl"
+              start={0}
+              end={200}
+              duration={3}
+            />
+          </div>
+          <span className="text-dark font-bold">happy clients</span>
         </div>
-        <div className="basis-1/4 flex flex-col justify-center items-center w-24 h-16">
-          <CountUp
-            className="font-bold text-3xl"
-            start={0}
-            end={35}
-            duration={3}
-          />
-          <p>Compleat Projects</p>
+      </div>
+      {/* Repeat the above structure for other sections */}
+      <div className="w-full gap-28 sm:flex sm:justify-center sm:items-center p-4 sm:ps-4 sm:pe-4 cursor-pointer">
+        <div className="flex flex-col w-full items-center mb-8 sm:mb-0 sm:flex-col-2">
+          <div className="mb-2 w-full flex items-center justify-center"> {/* Added a flex container */}
+            <FontAwesomeIcon icon={faPlus} size="lg" />
+            <CountUp
+              className="font-bold text-3xl"
+              start={0}
+              end={20}
+              duration={3}
+            />
+          </div>
+          <span className="text-dark font-bold">happy clients</span>
         </div>
-        <div className="basis-1/4 flex flex-col justify-center items-center w-24 h-16">
-          <CountUp
-            className="font-bold text-3xl"
-            start={0}
-            end={100}
-            duration={3}
-          />
-          <h1>cup of tea</h1>
+      </div>
+      <div className="w-full gap-28 sm:flex sm:justify-center sm:items-center p-4 sm:ps-4 sm:pe-4 cursor-pointer">
+        <div className="flex flex-col w-full items-center mb-8 sm:mb-0 sm:flex-col-2">
+          <div className="mb-2 w-full flex items-center justify-center"> {/* Added a flex container */}
+            <FontAwesomeIcon icon={faPlus} size="lg" />
+            <CountUp
+              className="font-bold text-3xl"
+              start={0}
+              end={50}
+              duration={3}
+            />
+          </div>
+          <span className="text-dark font-bold">happy clients</span>
         </div>
-        <div className="basis-1/4 flex flex-col justify-center items-center w-24 h-16">
-          <CountUp
-            className="font-bold text-3xl"
-            start={0}
-            end={9}
-            duration={3}
-          />
-          <h1>conty</h1>
+      </div>
+      <div className="w-full gap-28 sm:flex sm:justify-center sm:items-center p-4 sm:ps-4 sm:pe-4 cursor-pointer">
+        <div className="flex flex-col w-full items-center mb-8 sm:mb-0 sm:flex-col-2">
+          <div className="mb-2 w-full flex items-center justify-center"> {/* Added a flex container */}
+            <FontAwesomeIcon icon={faPlus} size="lg" />
+            <CountUp
+              className="font-bold text-3xl"
+              start={0}
+              end={100}
+              duration={3}
+            />
+          </div>
+          <span className="text-dark font-bold">happy clients</span>
         </div>
       </div>
     </div>
