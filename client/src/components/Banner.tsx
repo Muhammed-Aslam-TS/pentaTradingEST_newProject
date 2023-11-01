@@ -192,6 +192,7 @@ const Banner = () => {
         </div>
       </div>
 
+
       <div className="flex flex-col lg:flex-row items-stretch justify-between lg:px-0 px-6 2xl:mx-auto 2xl:container">
         <div className="z-30 relative lg:w-1/2">
           <div className="hidden bg-gray-200 w-full lg:w-10/12 lg:h-full lg:flex justify-end items-center">
@@ -258,6 +259,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };
