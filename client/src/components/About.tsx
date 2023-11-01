@@ -1,4 +1,4 @@
-// import Count from "./Count";
+import Count from "./Count";
 import image from "../assets/images/about.png";
 import aboutBg from "../assets/images/aboutBackground.jpg";
 
@@ -62,7 +62,7 @@ const About = () => {
               etc. with supply and installation with a qualified technical team.
             </p>
           </div>
-          {/* <Count /> */}
+          <Count />
           <div className="flex justify-start">
             <button className="mb-10 sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
               More Details
