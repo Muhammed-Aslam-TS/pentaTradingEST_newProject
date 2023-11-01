@@ -25,9 +25,16 @@ const BottomNavbar = () => {
    
     return (
         <>
+<<<<<<< HEAD
+      <nav className={`fixed top-0 lg:top-7 bg-gray-200 z-50 w-full flex flex-wrap items-center justify-between py-5 ${color
+            ? 'lg:bg-gray-200 lg:top-0 transition-all duration-500 ease-in'
+            : 'lg:bg-transparent transition-all duration-500 ease-out'}`}>             
+            {/* <nav className="relative flex flex-wrap items-center justify-between px-2 py-3"> */}
+                <div className=" max-w-screen-xl container md:px-4 px-10  mx-auto flex flex-wrap items-center justify-between">
+=======
             <nav className="fixed top-8 z-50 w-full flex flex-wrap items-center justify-between  py-5 ">               
-            {/* <nav className="fixed top-8 z-50 w-full flex flex-wrap items-center justify-between py-5"> */}
                 <div className=" max-w-screen-xl container px-4 mx-auto flex flex-wrap items-center justify-between">
+>>>>>>> cdc80d2d150d7e8cedc988aa34ab80d88342bfac
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
                             className="text-slg font-bold leading-relaxed inline-block mr-4 whitespace-nowrap  text-black"
