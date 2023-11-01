@@ -26,7 +26,7 @@ const About = () => {
             <h1 className="font-bold text-4xl">EXPERTS SINCE 2021</h1>
             <br />
             <p className="text-gray-600">
-              We would like to introduce ourselves,br “Penta Trading Est.”
+              We would like to introduce ourselves,“Penta Trading Est.”
               Basically located in Riyadh,
               <br /> we are the pioneer and specialized in the field of
               resilient flooring “a complete and total
