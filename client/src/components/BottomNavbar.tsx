@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import {RxHamburgerMenu} from 'react-icons/rx'
 
 const BottomNavbar = () => {
@@ -9,10 +9,23 @@ const BottomNavbar = () => {
         setSelectedOption(option);
         setNavbarOpen(false);
     };
+
+    const [color,setColor] = useState(false)
+
+    const changeColor=()=>{
+        if(window.scrollY >=10){
+            setColor(true)
+        }else{
+            setColor(false)
+        }
+    }
+
+    window.addEventListener('scroll',changeColor)
    
     return (
         <>
             <nav className="fixed top-8 z-50 w-full flex flex-wrap items-center justify-between  py-5 ">               
+            {/* <nav className="fixed top-8 z-50 w-full flex flex-wrap items-center justify-between py-5"> */}
                 <div className=" max-w-screen-xl container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
@@ -36,7 +49,7 @@ const BottomNavbar = () => {
                         }
                         id="example-navbar-danger"
                     >
-                        <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+                        <ul className="flex flex-col lg:flex-row list-none py-2 lg:py-0 space-y-3 lg:space-y-0 lg:ml-auto">
                             <li className='nav-item'>
                                 <a className="px-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
                                     href="#pablo"
@@ -78,7 +91,7 @@ const BottomNavbar = () => {
                                 </a>
                             </li>
                            <li className='nav-item'>
-                                <a className="px-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
+                                <a className="ps-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
                                     href="#pablo"
                                      onClick={() => handleOptionClick('contact')}
                                 >

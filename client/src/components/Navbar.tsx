@@ -6,7 +6,9 @@ import BottomNavbar from './BottomNavbar'
 const Navbar = () => {
     return (
         <div>
-            <TopNavbar/>
+            <div className='hidden lg:block'>
+                <TopNavbar/>
+            </div>
             <BottomNavbar/>
         </div>
     );

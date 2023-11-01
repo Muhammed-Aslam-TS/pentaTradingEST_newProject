@@ -2,8 +2,9 @@
 
 
 import CountUp from "react-countup";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import {FaPlus} from 'react-icons/fa'
 
 const Count = () => {
   return (
@@ -11,7 +12,8 @@ const Count = () => {
       <div className="w-full gap-28 sm:flex sm:justify-center sm:items-center p-4 sm:ps-4 sm:pe-4 cursor-pointer">
         <div className="flex flex-col w-full items-center mb-8 sm:mb-0 sm:flex-col-2">
           <div className="mb-2 w-full flex items-center justify-center"> {/* Added a flex container */}
-            <FontAwesomeIcon icon={faPlus} size="lg" />
+            {/* <FontAwesomeIcon icon={faPlus} size="lg" /> */}
+            <FaPlus/>
             <CountUp
               className="font-bold text-3xl"
               start={0}
@@ -26,7 +28,8 @@ const Count = () => {
       <div className="w-full gap-28 sm:flex sm:justify-center sm:items-center p-4 sm:ps-4 sm:pe-4 cursor-pointer">
         <div className="flex flex-col w-full items-center mb-8 sm:mb-0 sm:flex-col-2">
           <div className="mb-2 w-full flex items-center justify-center"> {/* Added a flex container */}
-            <FontAwesomeIcon icon={faPlus} size="lg" />
+            {/* <FontAwesomeIcon icon={faPlus} size="lg" /> */}
+            <FaPlus/>
             <CountUp
               className="font-bold text-3xl"
               start={0}
@@ -40,7 +43,8 @@ const Count = () => {
       <div className="w-full gap-28 sm:flex sm:justify-center sm:items-center p-4 sm:ps-4 sm:pe-4 cursor-pointer">
         <div className="flex flex-col w-full items-center mb-8 sm:mb-0 sm:flex-col-2">
           <div className="mb-2 w-full flex items-center justify-center"> {/* Added a flex container */}
-            <FontAwesomeIcon icon={faPlus} size="lg" />
+            {/* <FontAwesomeIcon icon={faPlus} size="lg" /> */}
+            <FaPlus/>
             <CountUp
               className="font-bold text-3xl"
               start={0}
@@ -54,7 +58,8 @@ const Count = () => {
       <div className="w-full gap-28 sm:flex sm:justify-center sm:items-center p-4 sm:ps-4 sm:pe-4 cursor-pointer">
         <div className="flex flex-col w-full items-center mb-8 sm:mb-0 sm:flex-col-2">
           <div className="mb-2 w-full flex items-center justify-center"> {/* Added a flex container */}
-            <FontAwesomeIcon icon={faPlus} size="lg" />
+            {/* <FontAwesomeIcon icon={faPlus} size="lg" /> */}
+            <FaPlus/>
             <CountUp
               className="font-bold text-3xl"
               start={0}

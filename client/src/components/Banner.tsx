@@ -59,11 +59,9 @@ const Banner = () => {
             className="w-1/2 "
             style={{
               borderRadius: "5px",
-              boxShadow: "rgba(40, 36, 36, 0.2) -10px 10px 10px",
+              boxShadow: "rgba(40, 36, 36, 0.25) -10px 10px 5px",
             }}
           >
-            {/* <img src={banner} alt="Your Image" className="object-cover h-full w-full" 
-          style={{ borderRadius: "5px",  boxShadow: "rgba(40, 36, 36, 0.2) -10px 10px 10px" }}/>          */}
             <Carousel
               showStatus={false}
               showThumbs={false}
@@ -108,13 +106,10 @@ const Banner = () => {
             </Carousel>
           </div>
         </div>
-        <div className="absolute top-0 left-0 h-3/4 w-10/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
+        <div className="absolute top-0 left-0 h-3/4 w-8/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
       </div>
 
-      <div className="lg:hidden h-screen z-10 flex flex-col w-full px-6">
-        {/* <div>
-            <img src={banner2} alt="Your Image" className="object-cover h-full w-full"/>
-          </div> */}
+      <div className="lg:hidden mt-18 lg:mt-0 h-screen z-10 flex flex-col w-full ">
         <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay>
           <div>
             <img
@@ -197,7 +192,6 @@ const Banner = () => {
         </div>
       </div>
 
-      
     </>
   );
 };
