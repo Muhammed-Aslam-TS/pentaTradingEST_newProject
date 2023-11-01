@@ -1,4 +1,4 @@
-import Count from "./Count";
+// import Count from "./Count";
 import image from "../assets/images/about.png";
 import aboutBg from "../assets/images/aboutBackground.jpg";
 
@@ -11,7 +11,7 @@ const About = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className=" md:flex w-full h-auto items-center justify-center gap-36"
+        className="container md:flex w-full h-auto items-center justify-center gap-36"
       >
         <div className="flex md:shadow-none sm:justify-center sm:shadow-2xl w-80 h-96 md:justify-end mt-7 ms-11 ">
           <img className="h-full w-full" src={image} alt="" srcSet="" />
@@ -26,7 +26,7 @@ const About = () => {
             <h1 className="font-bold text-4xl">EXPERTS SINCE 2021</h1>
             <br />
             <p className="text-gray-600">
-              We would like to introduce ourselves,br “Penta Trading Est.”
+              We would like to introduce ourselves,“Penta Trading Est.”
               Basically located in Riyadh,
               <br /> we are the pioneer and specialized in the field of
               resilient flooring “a complete and total
@@ -62,9 +62,9 @@ const About = () => {
               etc. with supply and installation with a qualified technical team.
             </p>
           </div>
-          <Count />
+          {/* <Count /> */}
           <div className="flex justify-start">
-            <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
+            <button className="mb-10 sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
               More Details
               <div className="ml-2 mt-0.5">
                 <svg

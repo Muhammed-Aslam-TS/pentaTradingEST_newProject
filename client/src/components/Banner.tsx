@@ -192,7 +192,6 @@ const Banner = () => {
         </div>
       </div>
 
-      
     </>
   );
 };
