@@ -2,7 +2,7 @@
 const Footer2 = () => {
   return (
   <div >
-    Footer2
+    Anusha 
   </div>
   )
 }
