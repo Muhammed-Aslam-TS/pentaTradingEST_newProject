@@ -5,14 +5,14 @@ import Footer from "./components/Footer";
 import Footer2 from "./components/Footer2";
 import Gallery from "./components/Gallery";
 import Navbar from "./components/Navbar";
+import Services from "./components/Services";
 
 function App() {
   return (
     <>
       <div>
         <div>
-        <Navbar />
-
+          <Navbar />
         </div>
         <div>
           <Banner />
@@ -21,13 +21,16 @@ function App() {
           <About />
         </div>
         <div>
+          <Services/>
+        </div>
+        <div>
           <Gallery />
         </div>
         <div>
           <Footer />
         </div>
         <div>
-<Footer2/>
+          <Footer2 />
         </div>
       </div>
     </>

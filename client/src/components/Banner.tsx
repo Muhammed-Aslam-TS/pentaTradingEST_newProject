@@ -10,9 +10,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Banner = () => {
   return (
     <>
-      <div className="hidden  h-screen lg:flex  items-center justify-center relative">
-        <div className=" relative z-10 flex w-full ">
-          <div className="w-1/2 p-3 pl-32">
+      <div className="hidden  h-auto lg:flex items-center  relative">
+        <div className=" z-10 flex w-full pt-20 pb-6">
+          <div className="w-1/2 p-3 pl-32 ">
             <p className="text-3xl py-3">
               Lorem Ipsum is simply dummy
               <br /> text of the printing and <br />
@@ -60,6 +60,7 @@ const Banner = () => {
             style={{
               borderRadius: "5px",
               boxShadow: "rgba(40, 36, 36, 0.25) -10px 10px 5px",
+
             }}
           >
             <Carousel
@@ -106,7 +107,7 @@ const Banner = () => {
             </Carousel>
           </div>
         </div>
-        <div className="absolute top-0 left-0 h-3/4 w-8/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
+        <div className="absolute top-0 left-0 h-5/6 w-8/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
       </div>
 
       <div className="lg:hidden mt-18 lg:mt-0 h-auto z-10 flex flex-col w-full ">
