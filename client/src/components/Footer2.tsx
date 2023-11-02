@@ -2,7 +2,7 @@
 const Footer2 = () => {
   return (
   <div >
-    Anusha 
+    Aslam
   </div>
   )
 }
