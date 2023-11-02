@@ -2,7 +2,7 @@ import "./App.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
-import Footer2 from "./components/Footer2";
+// import Footer2 from "./components/Footer2";
 import Gallery from "./components/Gallery";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
@@ -30,7 +30,7 @@ function App() {
           <Footer />
         </div>
         <div>
-          <Footer2 />
+{/* <Footer2/> */}
         </div>
       </div>
     </>
