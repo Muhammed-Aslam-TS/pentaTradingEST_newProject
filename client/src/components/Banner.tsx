@@ -11,9 +11,9 @@ const Banner = () => {
   return (
     <>
       <div className="hidden  h-auto lg:flex items-center  relative">
-        <div className=" z-10 flex w-full pt-20 pb-6">
-          <div className="w-1/2 p-3 pl-32 ">
-            <p className="text-3xl py-3">
+        <div className=" z-10 flex w-full items-center pt-20 pb-6">
+          <div className="w-1/2 p-3 lg:pl-36  lg:pt-10 ">
+            <p className="text-3xl py-3" >
               Lorem Ipsum is simply dummy
               <br /> text of the printing and <br />
               typesetting industry.
@@ -56,7 +56,7 @@ const Banner = () => {
             </button>
           </div>
           <div
-            className="w-1/2 "
+            className="w-1/2"
             style={{
               borderRadius: "5px",
               boxShadow: "rgba(40, 36, 36, 0.25) -10px 10px 5px",

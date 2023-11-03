@@ -2,36 +2,49 @@ import "./App.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
-// import Footer2 from "./components/Footer2";
+import Footer2 from "./components/Footer2";
 import Gallery from "./components/Gallery";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
+import Services2 from "./components/Services2";
+import Services3 from "./components/Services3";
+import Stats from "./components/Stats";
+
 
 function App() {
   return (
     <>
       <div>
-        <div>
+        
           <Navbar />
-        </div>
-        <div>
+        
+        
           <Banner />
-        </div>
-        <div>
+        
+        
+          <Services2 />
+        
+        
           <About />
-        </div>
-        <div>
-          <Services/>
-        </div>
-        <div>
+        
+        
+          <Services3 />
+        
+        
+          <Stats />
+        
+        
+          <Services />
+        
+        
           <Gallery />
-        </div>
-        <div>
+        
+        
           <Footer />
-        </div>
-        <div>
-{/* <Footer2/> */}
-        </div>
+        
+        
+          <Footer2 />
+        
       </div>
     </>
   );
