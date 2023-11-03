@@ -21,6 +21,9 @@ function App() {
         
         
           <Banner />
+
+
+          <Projects/>
         
         
           <Services2 />
