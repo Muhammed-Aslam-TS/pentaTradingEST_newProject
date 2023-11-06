@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <div className="mx-auto py-16 xl:px-20 lg:px-12 sm:px-6 px-4 bg-slate-900 mt-4">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
+            <div className="max-w-screen-xl container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
                 <div className="flex flex-col flex-shrink-0">
                     <div>
                         <svg width="57" height="17" viewBox="0 0 57 17" fill="none" xmlns="http://www.w3.org/2000/svg">
