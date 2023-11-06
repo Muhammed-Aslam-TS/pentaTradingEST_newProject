@@ -11,7 +11,7 @@ import Services from "./components/Services";
 import Services2 from "./components/Services2";
 import Services3 from "./components/Services3";
 import Stats from "./components/Stats";
-import Sample from "./components/sample";
+import Sample from "./components/Sample";
 
 
 function App() {
