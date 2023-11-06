@@ -66,8 +66,10 @@ const Banner = () => {
             <Carousel
               showStatus={false}
               showThumbs={false}
+              // showArrows={false}
               infiniteLoop
               autoPlay
+              interval={3000} 
             >
               <div>
                 <img

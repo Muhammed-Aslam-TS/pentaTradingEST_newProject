@@ -7,14 +7,15 @@ const About = () => {
     <div>
       <div
         style={{
-          backgroundImage: `url(${aboutBg})`,
+          // backgroundImage: `url(${aboutBg})`,
+          background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("https://image-editing-services.com/wp-content/uploads/2018/10/about-us-background.jpg")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="w-full h-auto py-0 lg:py-28 flex justify-center"
+        className="w-full h-auto py-0  lg:py-28 flex justify-center"
       >
-        <div className="max-w-screen-xl md:flex ">
-          <div className="flex justify-center items-center w-full md:w-1/2 h-auto mb-o sm:mb-10   ">
+        <div className="max-w-screen-xl md:flex px-4 ">
+          <div className="flex justify-center lg:justify-start items-center w-full md:w-1/2 h-auto p-5 md:p-0">
             <img className=" w-3/5 lg:w-3/5 " src={image} alt="" srcSet="" />
           </div>
 
@@ -25,7 +26,7 @@ const About = () => {
               </h1>
               <h1 className="font-bold text-4xl mb-5">EXPERTS SINCE 2021</h1>
 
-              <p className="text-gray-600 ">
+              <p className="text-gray-700 ">
                 We would like to introduce ourselves,“Penta Trading Est.”
                 Basically located in Riyadh,
                 we are the pioneer and specialized in the field of
@@ -34,7 +35,7 @@ const About = () => {
                 flooring solutions and finishin
                 materials for various applications.
               </p>
-              <p className="text-gray-600 pt-2">
+              <p className="text-gray-700 pt-2">
                 Our Main partners partners are basically from Europe & US offering
                 high quality and
                 standard items in accordance with client requirement and
