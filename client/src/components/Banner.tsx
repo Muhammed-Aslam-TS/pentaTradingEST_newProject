@@ -11,16 +11,15 @@ const Banner = () => {
   return (
     <>
       <div className="hidden  h-auto lg:flex items-center  relative">
-        <div className=" z-10 flex w-full items-center pt-20 pb-6">
-          <div className="w-1/2 p-3 lg:pl-36  lg:pt-10 ">
-            <p className="text-3xl py-3" >
-              Lorem Ipsum is simply dummy
-              <br /> text of the printing and <br />
-              typesetting industry.
-            </p>
+        <div className=" z-10 flex w-full pt-20 pb-12">
+          <div className="w-1/2 p-3 flex flex-col items-end pt-16">
+            <div className="w-4/5">
+            <h2 className="text-5xl py-3">
+              Lorem Ipsum typescript
+            </h2>
             <div className="py-5">
-              when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book.
+              when an unknown  scrambled it to make a type specimen book<br/> printer took a galley  of type and <br/>
+              scrambled it to make a type specimen book.
             </div>
             <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
               Explore
@@ -54,6 +53,7 @@ const Banner = () => {
                 </svg>
               </div>
             </button>
+          </div>
           </div>
           <div
             className="w-1/2"
@@ -149,15 +149,13 @@ const Banner = () => {
           </div>
         </Carousel>
         <div className="p-8 mt-5 bg-gray-200">
-          <p className="text-3xl py-3">
-            Lorem Ipsum is simply dummy
-            <br /> text of the printing and <br />
-            typesetting industry.
-          </p>
-          <div className="py-5">
-            when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book.
-          </div>
+        <h2 className="text-5xl py-3">
+              Lorem Ipsum typescript
+            </h2>
+            <div className="py-5">
+              when an unknown  scrambled it to make a type specimen book<br/> printer took a galley  of type and <br/>
+              scrambled it to make a type specimen book.
+            </div>
           <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
             Explore
             <div className="ml-2 mt-0.5">
