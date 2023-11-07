@@ -4,7 +4,7 @@ import { MdLocationOn, MdEmail, MdCall } from 'react-icons/md'
 
 const TopNavbar = () => {
     return (
-        <nav className="bg-gray-900 text-white ">
+        <nav className="bg-gray-900 text-white">
             <div className="max-w-screen-xl sm:px-0 flex items-center justify-between mx-auto ">
                 <div className="w-full sm:w-auto mb-4 sm:mb-0">
                     <ul className='flex flex-col sm:flex-row text-xs md:space-x-4 px-4 font-light sm:space-y-0 space-y-2'>
