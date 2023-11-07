@@ -1,3 +1,5 @@
+import React from 'react'
+import CountUp from 'react-countup'
 
 const Stats = () => {
   return (
@@ -12,7 +14,13 @@ const Stats = () => {
         <div className="flex items-center">
           <h3 className="relative ml-2 inline-block text-4xl font-bold leading-none">
             <span className="absolute -top-4 h-2 w-full bg-blue-200"></span>
-            328
+            
+            <CountUp
+              className="font-bold text-3xl"
+              start={0}
+              end={328}
+              duration={3}
+            />
           </h3>
           <span className="ml-3 text-base font-medium capitalize">Great Achievements</span>
         </div>
@@ -22,7 +30,13 @@ const Stats = () => {
         <div className="flex items-center">
           <h3 className="relative ml-2 inline-block text-4xl font-bold leading-none">
             <span className="absolute -top-4 h-2 w-full bg-blue-200"></span>
-            16
+            <CountUp
+              className="font-bold text-3xl"
+              start={0}
+              end={16}
+              duration={3}
+            />
+            
           </h3>
           <span className="ml-3 text-base font-medium capitalize">Graduations sponsored</span>
         </div>
@@ -32,7 +46,13 @@ const Stats = () => {
         <div className="flex items-center">
           <h3 className="relative ml-2 inline-block text-4xl font-bold leading-none">
             <span className="absolute -top-4 h-2 w-full bg-blue-200"></span>
-            41+
+            <CountUp
+              className="font-bold text-3xl"
+              start={0}
+              end={41}
+              duration={3}
+            />
+            +
           </h3>
           <span className="ml-3 text-base font-medium capitalize">jobs created</span>
         </div>
@@ -42,7 +62,12 @@ const Stats = () => {
         <div className="flex items-center">
           <h3 className="relative ml-2 inline-block text-4xl font-bold leading-none">
             <span className="absolute -top-4 h-2 w-full bg-blue-200"></span>
-            99%
+            <CountUp
+              className="font-bold text-3xl"
+              start={0}
+              end={99}
+              duration={3}
+            />%
           </h3>
           <span className="ml-3 text-base font-medium capitalize">Happy Customers</span>
         </div>

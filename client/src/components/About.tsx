@@ -1,6 +1,5 @@
 // import Count from "./Count";
 import image from "../assets/images/about.png";
-import aboutBg from "../assets/images/aboutBackground.jpg";
 
 const About = () => {
   return (
@@ -83,7 +82,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
