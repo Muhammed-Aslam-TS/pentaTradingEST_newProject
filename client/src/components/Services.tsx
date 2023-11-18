@@ -4,7 +4,7 @@ const Services = () => {
     return (
         <>
             <section className="bg-gray-900">
-                <div className="mx-auto grid max-w-xl gap-x-12 gap-y-12 px-4 py-20 md:max-w-screen-xl md:grid-cols-2 md:px-8 lg:grid-cols-3">
+                <div className="mx-auto grid max-w-xl gap-x-12 gap-y-12 px-4 py-20 md:max-w-screen-xl md:grid-cols-2 md:px-4 lg:grid-cols-3">
                     <div className="flex justify-between">
                         <h2 className="text-3xl font-medium text-white">
                             Unmatched <br />

@@ -12,6 +12,7 @@ import Services2 from "./components/Services2";
 import Services3 from "./components/Services3";
 import Stats from "./components/Stats";
 import Sample from "./components/Sample";
+import Footer2 from "./components/Footer2";
 
 
 function App() {
@@ -50,13 +51,14 @@ function App() {
           <Services />
           
         
+          <Sample/>
         
           <Gallery />
         
         
+          <Footer2/>
           <Footer />
         
-          <Sample/>
       
         
       </div>

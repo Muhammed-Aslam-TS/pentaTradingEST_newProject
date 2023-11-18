@@ -2,8 +2,8 @@
 const Sample = () => {
     return (
         <div>
-            <div className="container mx-auto">
-                <div className="flex flex-col lg:flex-row justify-center items-center py-12 mx-4 md:mx-6 ">
+            <div className="container max-w-screen-xl mx-auto">
+                <div className="flex flex-col lg:flex-row justify-center items-center py-12 mx-4 ">
                     <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
                         <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 text-center lg:text-left">Meet our professionals</h1>
                         <p className="text-base leading-normal text-gray-600 mt-4 md:w-8/12 lg:w-11/12 text-center lg:text-left">A good idiom for kids is "It's raining cats and dogs." Kids know what both cats and dogs are from an early age</p>
@@ -11,8 +11,8 @@ const Sample = () => {
                             <button className="bg-indigo-700 text-base font-medium text-white rounded text-center py-4 px-9 mt-8 lg:mt-12 hover:bg-indigo-600 leading-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 w-full sm:w-auto">View All</button>
                         </div>
                     </div>
-                    <div role="list" aria-label="Team members" className="lg:w-1/2 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-x-12 gap-y-12 md:gap-x-12 mt-10 lg:mt-0 sm:w-auto w-full">
-                        <div role="listitem" className="flex justify-center items-center ">
+                    <div role="list" aria-label="Team members" className="lg:w-1/2 grid grid-cols-4  gap-x-12 gap-y-12 md:gap-x-12 mt-10 lg:mt-0 sm:w-auto w-full">
+                        {/* <div role="listitem" className="flex justify-center items-center ">
                             <img src="https://i.ibb.co/McW2r4N/Group-178.png" className="w-16 h-16" alt="display avatar" role="img" />
                         </div>
                         <div role="listitem" className="flex justify-center items-center ">
@@ -26,8 +26,8 @@ const Sample = () => {
                         </div>
                         <div role="listitem" className="flex justify-center items-center ">
                             <img src="https://i.ibb.co/6HbjWy7/Group-1777.png" className="w-16 h-16" alt="display avatar" role="img" />
-                        </div>
-                        <div role="listitem" className="flex justify-center items-center ">
+                        </div> */}
+                        {/* <div role="listitem" className="flex justify-center items-center ">
                             <img src="https://i.ibb.co/DGkXVGg/Group-1778.png" className="w-16 h-16" alt="display avatar" role="img" />
                         </div>
                         <div role="listitem" className="flex justify-center items-center ">
@@ -35,7 +35,7 @@ const Sample = () => {
                         </div>
                         <div role="listitem" className="flex justify-center items-center ">
                             <img src="https://i.ibb.co/hHWS44y/Group-1780.png" className="w-16 h-16" alt="display avatar" role="img" />
-                        </div>
+                        </div> */}
                         <div role="listitem" className="flex justify-center items-center ">
                             <img src="https://i.ibb.co/hLY20Ys/Group-1781.png" className="w-16 h-16" alt="display avatar" role="img" />
                         </div>

@@ -1,14 +1,13 @@
 // import Count from "./Count";
 import image from "../assets/images/about.png";
-import aboutBg from "../assets/images/aboutBackground.jpg";
+import aboutBg from "../assets/images/about-us-background.jpg";
 
 const About = () => {
   return (
     <div>
       <div
         style={{
-          // backgroundImage: `url(${aboutBg})`,
-          background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("https://image-editing-services.com/wp-content/uploads/2018/10/about-us-background.jpg")`,
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url(${aboutBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
