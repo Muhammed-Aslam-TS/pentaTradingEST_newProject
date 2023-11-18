@@ -1,63 +1,25 @@
+import ContactForm from "./ContactForm"
 
 const Footer2 = () => {
   return (
-    <footer className="relative bg-gray-300 mt-5 pt-8 pb-6">
-      <div
-        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style={{ height: "80px" }}
-      >
-        <svg
-          className="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            className="text-gray-300 fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
+    <div className="relative">
+    <ContactForm/>
+    <footer className="relative bg-slate-900  pt-[370px] py-6">
+   
       <div className="container max-w-screen-xl  mx-auto">
-        <div className="flex flex-wrap">
-          <div className="w-full lg:w-6/12 px-4">
-            <h4 className="text-3xl font-semibold">
+        <div className="flex flex-wrap  p-4">
+          <div className="w-full md:w-6/12 ">
+            <h4 className="text-3xl text-white font-semibold">
               Let's keep in touch!
             </h4>
-            <h5 className="text-lg mt-0 mb-2 text-gray-700">
+            <h5 className="text-lg mt-0  mb-2 text-gray-400">
               Find us on any of these platforms, we respond 1-2 business days.
             </h5>
-            {/* <div className="mt-6">
-              <button
-                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-twitter"></i>
-              </button>
-              <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-facebook-square"></i>
-              </button>
-              <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-dribbble"></i>
-              </button>
-              <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-github"></i>
-              </button>
-            </div> */}
-            <div className="flex items-center gap-x-4 mt-12">
-                        <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+
+            
+            
+            <div className="flex items-center gap-x-4 my-6 mt-6 md:mt-12">
+                        <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 hover:opacity-100 rounded-full flex items-center justify-center">
                             <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     fillRule="evenodd"
@@ -67,7 +29,7 @@ const Footer2 = () => {
                                 />
                             </svg>
                         </div>
-                        <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+                        <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 hover:opacity-100 rounded-full flex items-center justify-center">
                             <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     fillRule="evenodd"
@@ -77,7 +39,7 @@ const Footer2 = () => {
                                 />
                             </svg>
                         </div>
-                        <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+                        <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 hover:opacity-100 rounded-full flex items-center justify-center">
                             <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     fillRule="evenodd"
@@ -87,7 +49,7 @@ const Footer2 = () => {
                                 />
                             </svg>
                         </div>
-                        <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+                        <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 hover:opacity-100 rounded-full flex items-center justify-center">
                             <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     fillRule="evenodd"
@@ -99,58 +61,58 @@ const Footer2 = () => {
                         </div>
                     </div>
           </div>
-          <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
+          <div className="w-full md:w-6/12 ">
+            <div className="flex flex-wrap items-top gap-3 mb-6">
+              <div className="w-full  md:w-4/12 px-4 md:px-0 ml-auto">
+                <span className="block uppercase text-white text-sm font-semibold mb-4">
                   Useful Links
                 </span>
                 <ul className="list-unstyled">
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="text-gray-400 hover:text-gray-100 font-semibold block pb-2 text-sm"
                         href="https://www.creative-tim.com/presentation">About Us
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="text-gray-400 hover:text-gray-100 font-semibold block pb-2 text-sm"
                         href="https://blog.creative-tim.com">Blog
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="text-gray-400 hover:text-gray-100 font-semibold block pb-2 text-sm"
                         href="https://www.github.com/creativetimofficial">Github
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="text-gray-400 hover:text-gray-100 font-semibold block pb-2 text-sm"
                         href="https://www.creative-tim.com/bootstrap-themes/free">Free Products
                     </a>
                   </li>
 
                 </ul>
               </div>
-              <div className="w-full lg:w-4/12 px-4">
-                <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
+              <div className="w-full  md:w-4/12 px-4 md:px-0 ">
+                <span className="block uppercase text-white text-sm font-semibold mb-4">
                   Other Resources
                 </span>
                 <ul className="list-unstyled">
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="text-gray-400 hover:text-gray-100 font-semibold block pb-2 text-sm"
                     href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT License
                   </a>
                   </li>
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="text-gray-400 hover:text-gray-100 font-semibold block pb-2 text-sm"
                         href="https://creative-tim.com/terms">Terms & Conditions
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="text-gray-400 hover:text-gray-100 font-semibold block pb-2 text-sm"
                         href="https://creative-tim.com/privacy">Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="text-gray-400 hover:text-gray-100 font-semibold block pb-2 text-sm"
                         href="https://creative-tim.com/contact-us">Contact Us
                     </a>
                   </li>
@@ -160,22 +122,21 @@ const Footer2 = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-400" />
+        <hr className="my-6 border-gray-600" />
         <div className="flex flex-wrap items-center md:justify-between justify-center">
-          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-gray-600 font-semibold py-1">
-              Copyright © {new Date().getFullYear()}{" "}Tailwind Starter Kit by{" "}
-              <a
-                href="https://www.creative-tim.com"
-                className="text-gray-600 hover:text-gray-900"
-              >
-                Creative Tim
-              </a>.
+          <div className="w-full  px-4 mx-auto text-center">
+            <div className="text-sm text-gray-400 font-semibold py-1">
+              Copyright © {new Date().getFullYear()}{" "}{" "}
+             
+              <span className='text-gray-100 me-5'>Penta Trading Est</span>
+              All rights reserved
+              
             </div>
           </div>
         </div>
       </div>
     </footer>
+    </div>
   )
 }
 

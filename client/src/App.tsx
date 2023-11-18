@@ -1,7 +1,6 @@
 import "./App.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
-import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Navbar from "./components/Navbar";
 
@@ -55,7 +54,6 @@ function App() {
         
         
           <Footer2/>
-          <Footer />
         
       
         
