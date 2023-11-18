@@ -11,7 +11,7 @@ const Banner = () => {
   return (
     <>
       <div className="hidden  h-auto lg:flex items-center  relative">
-        <div className=" z-10 flex w-full pt-20 pb-12">
+        <div className=" z-10 flex w-full pt-24 pb-12">
           <div className="w-1/2 p-3 flex flex-col items-end pt-16">
             <div className="w-4/5">
             <h2 className="text-5xl py-3">
@@ -109,7 +109,7 @@ const Banner = () => {
             </Carousel>
           </div>
         </div>
-        <div className="absolute top-0 left-0 h-5/6 w-8/12 before:bg-gray-200 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
+        <div className="absolute top-0 left-0 h-5/6 w-8/12 before:bg-gray-200  before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-0"></div>
       </div>
 
       <div className="lg:hidden mt-18 lg:mt-0 h-auto z-10 flex flex-col w-full ">
