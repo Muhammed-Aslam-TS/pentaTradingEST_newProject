@@ -68,8 +68,18 @@ const Count = () => {
             />
           </div>
           <span className="text-dark font-bold">happy clients</span>
+        
         </div>
       </div>
+
+
+
+
+ 
+
+  
+
+
     </div>
   );
 };

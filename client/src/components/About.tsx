@@ -13,9 +13,10 @@ const About = () => {
         }}
         className="w-full h-auto py-0  lg:py-28 flex justify-center"
       >
-        <div className="flex md:shadow-none sm:justify-center sm:shadow-2xl w-80 h-96 md:justify-end mt-7 ms-11 ">
-          <img className="h-full w-full" src={image} alt="" srcSet="" />
-        </div>
+        <div className="max-w-screen-xl md:flex px-4 ">
+          <div className="flex justify-center lg:justify-start items-center w-full md:w-1/2 h-auto p-5 md:p-0">
+            <img className=" w-3/5 lg:w-3/5 " src={image} alt="" srcSet="" />
+          </div>
 
           <div className="w-full md:w-1/2 h-auto flex flex-col justify-center p-4">
             <div className="">
@@ -82,6 +83,7 @@ const About = () => {
           </div>
         </div>
       </div>
+    </div>
   );
 };
 

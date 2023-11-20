@@ -13,6 +13,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
+const MongoUrl = "mongodb+srv://aslam5588:aslam5588@cluster0.re2ljg7.mongodb.net/black&white";
+// const MongoUrl:string = "mongodb://127.0.0.1:27017/black&white"
 const dbOpt = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -21,7 +23,7 @@ const connectDb = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // mongodb connection string
         mongoose_1.default.set("strictQuery", false);
-        yield mongoose_1.default.connect("mongodb://localhost:27017/uniquePasswordGenerator", dbOpt);
+        yield mongoose_1.default.connect(MongoUrl, dbOpt);
         // eslint-disable-next-line no-console
         console.log("MongoDB connected");
     }

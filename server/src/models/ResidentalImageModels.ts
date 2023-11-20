@@ -7,7 +7,13 @@ const ImgResidentialSchema = new Schema({
     img: {
         type: [String],
     },
-    name: {
+    category: {
+        type: String
+    },
+    hedding: {
+        type: String
+    },
+    description: {
         type: String
     }
 })

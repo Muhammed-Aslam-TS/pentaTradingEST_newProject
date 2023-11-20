@@ -1,30 +1,21 @@
 import multer from "multer";
 
-const storage = multer.diskStorage({
-	destination: (req, file, callback) => {
-		callback(null, 'uploads/');
-	},
-	filename: (req, file, callback) => {
-		callback(null, Date.now() + '' + file.originalname);
-	},
-});
-
-const upload = multer({
-	storage: storage,
-	fileFilter: function (req, file, callback) {
-		if (file.mimetype === "image/png" || file.mimetype === "image/jpeg") {
-			callback(null, true);
-		} else {
-			console.log('Only jpg or png files are supported for this upload type');
-			callback(null, false);
-		}
-	},
-	limits: {
-		fileSize: 2024 * 1024 * 2, // 2MB file size limit
-	},
-});
-
-export default upload;
 
 
-// export const upload = multer({ storage: storage });
+
+    // // Define the storage for uploaded files
+  const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+      cb(null, "uploads/"); // Specify the destination folder for uploaded files
+    },
+    filename: (req, file, cb) => {
+      cb(null, Date.now() + "-" + file.originalname); // Specify the file name
+    }
+  });
+
+  // Create the multer instance with the defined storage
+  export const upload = multer({ storage:multer.memoryStorage() });
+
+
+  export default upload;
+

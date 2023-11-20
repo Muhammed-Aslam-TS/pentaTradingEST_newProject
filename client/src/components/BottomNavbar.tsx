@@ -30,7 +30,7 @@ const BottomNavbar = () => {
             <nav className={`fixed top-0 bg-zinc-50 shadow-lg z-50 w-full flex flex-wrap items-center justify-between py-2 ${color
                 ? 'lg:bg-zinc-50 lg:top-0 transition-all duration-500 ease-in'
                 : 'lg:bg-transparent shadow-none lg:top-7 transition-all duration-500 ease-out'}`}>
-                <div className=" max-w-screen-xl container md:px-4 px-10  mx-auto flex flex-wrap items-center justify-between">
+                <div className=" max-w-screen-xl container xl:px-4 px-10 mx-auto flex flex-wrap items-center justify-between">
 
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
