@@ -11,7 +11,7 @@ const About = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="w-full h-auto py-0  lg:py-28 flex justify-center"
+        className="w-full h-auto py-0 bg-fixed lg:py-28 flex justify-center"
       >
         <div className="max-w-screen-xl md:flex px-4 ">
           <div className="flex justify-center lg:justify-start items-center w-full md:w-1/2 h-auto p-5 md:p-0">
