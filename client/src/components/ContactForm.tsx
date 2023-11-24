@@ -4,7 +4,7 @@ const ContactForm = () => {
     return (
         <div className=" mt-80">
             <div
-                className="bg-gray-300  w-5/6 mx-auto p-10 flex absolute bottom-2/4 left-0 right-0 z-10 rounded-xl"
+                className="bg-gray-300 bg-fixed w-5/6 mx-auto p-10 flex absolute bottom-2/4 left-0 right-0 z-10 rounded-xl"
                 style={{
                     backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg')",
                     backgroundSize: "cover",
