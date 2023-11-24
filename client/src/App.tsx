@@ -8,8 +8,9 @@ import Projects2 from "./components/Projects2";
 import Services from "./components/Services";
 
 import Stats from "./components/Stats";
-import Sample from "./components/Sample";
 import Footer2 from "./components/Footer2";
+import { Sample } from "./components/Sample";
+import { AboutPage } from "./pages/AboutPage";
 
 
 function App() {
@@ -30,7 +31,6 @@ function App() {
 
 
 
-
           {/* <Projects/> */}
         
         
@@ -46,17 +46,12 @@ function App() {
         
         
           <Services />
-          
+          {/* <Sample/> */}
         
+          <Gallery /> 
           <Sample/>
-        
-          <Gallery />
-        
-          <Sample/>
-        
           <Footer2/>
-        
-      
+          <AboutPage/>
         
       </div>
     </>
