@@ -21,7 +21,7 @@ const Projects2 = () => {
                     alt="A girl Posing Image"
                   />
                   <div className="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
-                    <button className="bg-transparent font-medium text-base leading-4 border-2 border-black py-3 w-full mt-2 hover:bg-gray-900 hover:text-white">
+                    <button className="bg-transparent font-medium text-base leading-4 border-2 border-gray-900 py-3 w-full mt-2 hover:bg-gray-900 hover:text-white">
                       Quick View
                     </button>
                   </div>
@@ -39,7 +39,7 @@ const Projects2 = () => {
                     alt="A girl Posing Image" />
                   <div className="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
                     <button
-                      className="bg-transparent font-medium text-base leading-4 border-2 border-black py-3 w-full mt-2  hover:bg-gray-900 hover:text-white">
+                      className="bg-transparent font-medium text-base leading-4 border-2 border-gray-900 py-3 w-full mt-2  hover:bg-gray-900 hover:text-white">
                       Quick View
                     </button>
                   </div>
@@ -59,7 +59,7 @@ const Projects2 = () => {
                     alt="A girl Posing Image" />
                   <div className="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
                     <button
-                      className="bg-transparent font-medium text-base leading-4 border-2 border-black py-3 w-full mt-2  hover:bg-gray-900 hover:text-white">
+                      className="bg-transparent font-medium text-base leading-4 border-2 border-gray-900 py-3 w-full mt-2  hover:bg-gray-900 hover:text-white">
                       Quick View
                     </button>
                   </div>
