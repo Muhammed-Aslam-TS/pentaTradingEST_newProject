@@ -2,16 +2,14 @@
 import { useState } from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import logo from '../assets/images/logo.png'
+import { Link } from 'react-router-dom'
 
-const BottomNavbar = () => {
+interface NavbarProps {
+    activeLink: string; // Change the type based on what 'activeLink' should be
+}
+
+const BottomNavbar: React.FC<NavbarProps> = ({ activeLink }) => {
     const [navbarOpen, setNavbarOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState<string | null>("home");
-
-    const handleOptionClick = (option: string) => {
-        setSelectedOption(option);
-        setNavbarOpen(false);
-    };
-
     const [color, setColor] = useState(false)
 
     const changeColor = () => {
@@ -21,6 +19,7 @@ const BottomNavbar = () => {
             setColor(false)
         }
     }
+    console.log("actveee", activeLink)
 
     window.addEventListener('scroll', changeColor)
 
@@ -33,13 +32,12 @@ const BottomNavbar = () => {
                 <div className=" max-w-screen-xl container xl:px-4 px-10 mx-auto flex flex-wrap items-center justify-between">
 
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                        <a
+                        <Link to={"/"}
                             className="text-slg font-bold leading-relaxed inline-block mr-4 whitespace-nowrap  text-black"
-                            href="#pablo"
+
                         >
-                            {/* Penta <span className='font-medium'>Trading Est</span> */}
                             <span><img src={logo} className='w-32' /></span>
-                        </a>
+                        </Link>
                         <button
                             className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
@@ -57,52 +55,35 @@ const BottomNavbar = () => {
                     >
                         <ul className="flex flex-col lg:flex-row list-none py-2 lg:py-0 space-y-3 lg:space-y-0 lg:ml-auto">
                             <li className='nav-item'>
-                                <a className="px-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
-                                    href="#pablo"
-                                    onClick={() => handleOptionClick('home')}
-                                >
-                                    <span className={`py-1 ${selectedOption === 'home' ? 'border-b-2 border-black' : ''}`}>HOME</span>
-                                </a>
+                                <Link to={"/"} className="px-7 flex items-center text-xs uppercase font-medium leading-snug "                                                                 >
+                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'home' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>HOME</span>
+                                </Link>
+
                             </li>
                             <li className='nav-item'>
-                                <a className="px-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
-                                    href="#pablo"
-                                    onClick={() => handleOptionClick('about')}
-                                >
-                                    <span className={`py-1 ${selectedOption === 'about' ? 'border-b-2 border-black' : ''}`}>ABOUT US</span>
-                                </a>
+                                <Link to={"/about"} className="px-7 flex items-center text-xs uppercase font-medium leading-snug ">
+                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'about' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>ABOUT US</span>
+                                </Link>
                             </li>
                             <li className='nav-item'>
-                                <a className="px-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
-                                    href="#pablo"
-                                    onClick={() => handleOptionClick('gallery')}
-                                >
-                                    <span className={`py-1 ${selectedOption === 'gallery' ? 'border-b-2 border-black' : ''}`}>GALLERY</span>
-                                </a>
+                                <Link to={"/gallery"} className="px-7  flex items-center text-xs uppercase font-medium leading-snug ">
+                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'gallery' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>GALLERY</span>
+                                </Link>
                             </li>
                             <li className='nav-item'>
-                                <a className="px-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
-                                    href="#pablo"
-                                    onClick={() => handleOptionClick('service')}
-                                >
-                                    <span className={`py-1 ${selectedOption === 'service' ? 'border-b-2 border-black' : ''}`}>SERVICE</span>
-                                </a>
+                                <Link to={"/services"} className="px-7  flex items-center text-xs uppercase font-medium leading-snug ">
+                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'services' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>SERVICES</span>
+                                </Link>
                             </li>
                             <li className='nav-item'>
-                                <a className="px-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
-                                    href="#pablo"
-                                    onClick={() => handleOptionClick('projects')}
-                                >
-                                    <span className={`py-1 ${selectedOption === 'projects' ? 'border-b-2 border-black' : ''}`}>PROJECTS</span>
-                                </a>
+                                <Link to={'/projects'} className="px-7  flex items-center text-xs uppercase font-medium leading-snug ">
+                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'projects' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>PROJECTS</span>
+                                </Link>
                             </li>
                             <li className='nav-item'>
-                                <a className="ps-7  flex items-center text-xs uppercase font-medium leading-snug text-black hover:opacity-75"
-                                    href="#pablo"
-                                    onClick={() => handleOptionClick('contact')}
-                                >
-                                    <span className={`py-1 ${selectedOption === 'contact' ? 'border-b-2 border-black' : ''}`}>CONTACT</span>
-                                </a>
+                                <Link to={'/contact'} className="ps-7  flex items-center text-xs uppercase font-medium leading-snug ">
+                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'contact' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>CONTACT</span>
+                                </Link>
                             </li>
                         </ul>
                     </div>

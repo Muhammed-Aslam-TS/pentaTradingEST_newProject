@@ -1,17 +1,19 @@
+import TopNavbar from './TopNavbar';
+import BottomNavbar from './BottomNavbar';
 
-import TopNavbar from './TopNavbar'
-import BottomNavbar from './BottomNavbar'
+interface NavbarProps {
+    activeLink: string; // Change the type based on what 'activeLink' should be
+}
 
-
-const Navbar = () => {
+const Navbar: React.FC<NavbarProps> = ({ activeLink }) => {
     return (
         <div>
             <div className='hidden lg:block'>
-                <TopNavbar/>
+                <TopNavbar />
             </div>
-            <BottomNavbar/>
+            <BottomNavbar activeLink={activeLink} />
         </div>
     );
 }
 
-export default Navbar
+export default Navbar;

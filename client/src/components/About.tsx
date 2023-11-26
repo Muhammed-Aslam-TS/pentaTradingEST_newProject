@@ -1,6 +1,7 @@
 // import Count from "./Count";
 import image from "../assets/images/about.png";
 import aboutBg from "../assets/images/about-us-background.jpg";
+import {Link} from 'react-router-dom'
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
               </h1>
               <h1 className="font-bold text-4xl mb-5">EXPERTS SINCE 2021</h1>
 
-              <p className="text-gray-700 ">
+              <p className="text-gray-700 font-normal">
                 We would like to introduce ourselves,“Penta Trading Est.”
                 Basically located in Riyadh,
                 we are the pioneer and specialized in the field of
@@ -47,7 +48,7 @@ const About = () => {
             </div>
             {/* <Count /> */}
             <div className="flex justify-start">
-              <button className=" sm:w-auto w-full mt-8 mb-5 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
+              <Link to={"/about"} className=" sm:w-auto w-full mt-8 mb-5 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
                 More Details
                 <div className="ml-2 mt-0.5">
                   <svg
@@ -78,7 +79,7 @@ const About = () => {
                     />
                   </svg>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

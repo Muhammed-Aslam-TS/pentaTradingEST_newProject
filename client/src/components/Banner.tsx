@@ -8,52 +8,53 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Banner = () => {
+  
   return (
     <>
       <div className="hidden  h-auto lg:flex items-center  relative">
         <div className=" z-10 flex w-full pt-24 pb-12">
           <div className="w-1/2 p-3 flex flex-col items-end pt-16">
             <div className="w-4/5">
-            <h2 className="text-5xl py-3">
-              Lorem Ipsum typescript
-            </h2>
-            <div className="py-5">
-              when an unknown  scrambled it to make a type specimen book<br/> printer took a galley  of type and <br/>
-              scrambled it to make a type specimen book.
-            </div>
-            <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
-              Explore
-              <div className="ml-2 mt-0.5">
-                <svg
-                  className="fill-stroke"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.33325 8H12.6666"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 10.6667L12.6667 8"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 5.33301L12.6667 7.99967"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+              <h2 className="text-5xl py-3">
+                Lorem Ipsum typescript
+              </h2>
+              <div className="py-5">
+                when an unknown  scrambled it to make a type specimen book<br /> printer took a galley  of type and <br />
+                scrambled it to make a type specimen book.
               </div>
-            </button>
-          </div>
+              <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
+                Explore
+                <div className="ml-2 mt-0.5">
+                  <svg
+                    className="fill-stroke"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.33325 8H12.6666"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10 10.6667L12.6667 8"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10 5.33301L12.6667 7.99967"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
           </div>
           <div
             className="w-1/2"
@@ -69,7 +70,7 @@ const Banner = () => {
               // showArrows={false}
               infiniteLoop
               autoPlay
-              interval={3000} 
+              interval={3000}
             >
               <div>
                 <img
@@ -151,13 +152,13 @@ const Banner = () => {
           </div>
         </Carousel>
         <div className="p-8 mt-5 bg-gray-200">
-        <h2 className="text-5xl py-3">
-              Lorem Ipsum typescript
-            </h2>
-            <div className="py-5">
-              when an unknown  scrambled it to make a type specimen book<br/> printer took a galley  of type and <br/>
-              scrambled it to make a type specimen book.
-            </div>
+          <h2 className="text-5xl py-3">
+            Lorem Ipsum typescript
+          </h2>
+          <div className="py-5">
+            when an unknown  scrambled it to make a type specimen book<br /> printer took a galley  of type and <br />
+            scrambled it to make a type specimen book.
+          </div>
           <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
             Explore
             <div className="ml-2 mt-0.5">

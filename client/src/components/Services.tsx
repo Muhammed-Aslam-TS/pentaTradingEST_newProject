@@ -3,7 +3,13 @@ import { MdMiscellaneousServices } from 'react-icons/md'
 const Services = () => {
     return (
         <>
-            <section className="bg-gray-900">
+            <section
+        //      style={{
+        //   backgroundImage: ` url('https://media.istockphoto.com/id/1630833300/vector/global-network-connection-world-map-point-and-line-composition-concept-of-global-business.jpg?b=1&s=612x612&w=0&k=20&c=mrMrE8eYY_1lQjY9SSAXrWzQnb3t5WS2DuxDo5Vyt0I=')`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }} 
+        className="bg-gray-900">
                 <div className="mx-auto grid max-w-xl gap-x-12 gap-y-12 px-4 py-20 md:max-w-screen-xl md:grid-cols-2 md:px-4 lg:grid-cols-3">
                     <div className="flex justify-between">
                         <h2 className="text-3xl font-medium text-white">
