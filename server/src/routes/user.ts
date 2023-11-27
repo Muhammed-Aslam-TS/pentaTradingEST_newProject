@@ -6,7 +6,11 @@ import ResidentialController from "../controller/ProjectsController";
 
 const router = express.Router();
 
-
+router.get('/',(req,res)=>{
+    const val="hello guyss"
+    console.log("serverrr")
+    res.status(200).json({ message: "server connected",val});
+})
 router.post('/addImages', upload.single('file'), userController.heroImage);
 router.get('/getImages',  userController.getHeroImage);
 router.post('/addResidentialImages', upload.array('file',10), ResidentialController.AddProjects);

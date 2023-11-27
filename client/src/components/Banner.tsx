@@ -1,13 +1,25 @@
+import { sampleAction } from "../actions/SampleActions";
 import banner1 from "../assets/images/banner1.jpeg";
 import banner2 from "../assets/images/banner2.jpg";
 import banner3 from "../assets/images/banner3.jpg";
 import banner4 from "../assets/images/banner4.jpg";
 import banner5 from "../assets/images/banner5.webp";
-
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Banner = () => {
+
+ const handleClick= async()=>{
+  try{
+
+    await sampleAction()
+    console.log("handleClick")
+
+ } catch (error) {
+        console.log(error);
+    }
+  
+ }
   
   return (
     <>
@@ -22,7 +34,7 @@ const Banner = () => {
                 when an unknown  scrambled it to make a type specimen book<br /> printer took a galley  of type and <br />
                 scrambled it to make a type specimen book.
               </div>
-              <button className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
+              <button onClick={handleClick} className="sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
                 Explore
                 <div className="ml-2 mt-0.5">
                   <svg

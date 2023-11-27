@@ -23,7 +23,7 @@ const port: Number = 3000;
 app.use(morgan("dev"));
 
 const corsOptions = {
-	origin: 'http://localhost:4200',
+	origin: 'http://localhost:5173',
 	credentials: true,
 	optionSuccessStatus: 200
 };
