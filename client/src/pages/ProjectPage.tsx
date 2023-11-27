@@ -1,46 +1,90 @@
-import Footer2 from "../components/Footer2";
-import Header from "../components/Header";
 import Navbar from "../components/Navbar";
-
+import banner2 from "../assets/images/banner2.jpg";
+import banner3 from "../assets/images/banner3.jpg";
+import banner4 from "../assets/images/banner4.jpg";
+import Header from "../components/Header";
+import Footer2 from "../components/Footer2";
+import { useEffect } from "react";
 
 
 export const ProjectPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-        <Navbar/>
+        <Navbar activeLink={'projects'}/>
         <Header/>
 
 
-      <div className="mx-auto max-w-7xl p-16 pt-52">
-        <div className="text-center">
-          <h2 className="font-semibold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
-            PROJECTS{" "}
-          </h2>
-          <p className="font-normal text-base leading-6 text-gray-600 mt-4 lg:w-5/12 md:w-9/12 mx-auto">
-            Follow us on instagram
-            <span className="underline cursor-pointer">
-              followuspleaseee
-            </span>{" "}
-            and tag us to get featured on our timeline
-          </p>
-        </div>
-        <div className="-m-1 flex flex-wrap md:-m-2 pt-24">
-          <div className="flex w-1/3 flex-wrap">
-            <div className="w-full p-1 md:p-2 image-container">
-              <img
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src="{{item.img[0]}}"
-              />
-              <div className="image-text flex flex-col">
-                <p className="text-white text-3xl mb-2"></p>
-                <p className="text-white mb-2">click heare</p>
-                <button className="px-3 py-1 rounded-lg bg-white text-black">
-                  Go to Work{" "}
-                </button>
+        <div className="2xl:container 2xl:mx-auto">
+        <div className="py-6 lg:px-20 md:px-6 px-4">
+          {/* <h1 className="text-3xl font-extralight ">Our Works</h1> */}
+          <div
+            className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-y-12 lg:gap-x-8 sm:gap-y-10 sm:gap-x-6 gap-y-6 lg:mt-12 mt-10">
+
+            <div>
+              <div className="relative">
+                <div className="relative group">
+                  <img
+                    className="w-full transition-opacity duration-500 group-hover:opacity-25"
+                    src={banner3}
+                    alt="A girl Posing Image"
+                  />
+                  <div className="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                    <button className="bg-transparent font-medium text-base leading-4 border-2 border-gray-900 py-3 w-full mt-2 hover:bg-gray-900 hover:text-white">
+                      Quick View
+                    </button>
+                  </div>
+                </div>
+                {/* <p className="font-semibold  leading-5 md:mt-6 mt-4">RESIDENTIAL</p> */}
               </div>
             </div>
+
+            
+
+            <div>
+              <div className="relative">
+                <div className="relative group">
+                  <img className="w-full transition-opacity duration-500 group-hover:opacity-25" src={banner2}
+                    alt="A girl Posing Image" />
+                  <div className="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                    <button
+                      className="bg-transparent font-medium text-base leading-4 border-2 border-gray-900 py-3 w-full mt-2  hover:bg-gray-900 hover:text-white">
+                      Quick View
+                    </button>
+                  </div>
+                </div>
+                {/* <p className="font-semibold  leading-5  md:mt-6 mt-4">
+                  COMMERCIAL
+                </p> */}
+                {/* <!-- <p className="text-gray-400 leading-5 mt-4 font-extralight ms-1 ">Transforming your
+              home into a personalized oasis of comfort and style</p> --> */}
+              </div>
+            </div>
+
+            <div>
+              <div className="relative">
+                <div className="relative group">
+                  <img className="w-full transition-opacity duration-500 group-hover:opacity-25" src={banner4}
+                    alt="A girl Posing Image" />
+                  <div className="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                    <button
+                      className="bg-transparent font-medium text-base leading-4 border-2 border-gray-900 py-3 w-full mt-2  hover:bg-gray-900 hover:text-white">
+                      Quick View
+                    </button>
+                  </div>
+                </div>
+                {/* <p className="font-semibold  leading-5  md:mt-6 mt-4">
+                  PREMIUM VILLAS
+                </p> */}
+                {/* <!-- <p className="text-gray-400 leading-5 mt-4 ms-1  font-extralight">Transforming your
+              home into a personalized oasis of comfort and style</p> --> */}
+              </div>
+
+            </div>
           </div>
+
         </div>
       </div>
       <Footer2 />
