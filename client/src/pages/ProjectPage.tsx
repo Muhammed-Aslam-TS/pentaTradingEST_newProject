@@ -5,6 +5,7 @@ import banner4 from "../assets/images/banner4.jpg";
 import Header from "../components/Header";
 import Footer2 from "../components/Footer2";
 import { useEffect } from "react";
+import ScrollTop from "../components/ScrollTop";
 
 
 export const ProjectPage = () => {
@@ -88,6 +89,7 @@ export const ProjectPage = () => {
         </div>
       </div>
       <Footer2 />
+      <ScrollTop/>
     </div>
   );
 };

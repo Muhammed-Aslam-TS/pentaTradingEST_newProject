@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Footer2 from "../components/Footer2";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar"
+import ScrollTop from "../components/ScrollTop";
 
 export const AboutPage = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ export const AboutPage = () => {
         </div>
       </div>
       <Footer2 />
+      <ScrollTop/>
     </div>
   );
 };

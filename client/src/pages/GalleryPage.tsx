@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Footer2 from '../components/Footer2'
 import { useEffect } from 'react';
+import ScrollTop from '../components/ScrollTop';
 
 const GalleryPage = () => {
     useEffect(() => {
@@ -14,6 +15,7 @@ const GalleryPage = () => {
         <Header/>
        
         <Footer2/>
+        <ScrollTop/>
     </div>
   )
 }

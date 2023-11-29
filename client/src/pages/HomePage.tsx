@@ -5,6 +5,7 @@ import Gallery from "../components/Gallery";
 import Navbar from "../components/Navbar";
 import Projects2 from "../components/Projects2";
 import { Sample } from "../components/Sample";
+import ScrollTop from "../components/ScrollTop";
 import Services from "../components/Services";
 import Stats from "../components/Stats";
 
@@ -20,6 +21,7 @@ export const HomePage = ()=> {
         <Sample/>
         <Gallery/>
         <Footer2/>
+        <ScrollTop/>
       </div>  
   );
 }
