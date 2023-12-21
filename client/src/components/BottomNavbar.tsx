@@ -33,13 +33,13 @@ const BottomNavbar: React.FC<NavbarProps> = ({ activeLink }) => {
 
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <Link to={"/"}
-                            className="text-slg font-bold leading-relaxed inline-block mr-4 whitespace-nowrap  text-black"
+                            className="text-slg opacity-100 leading-relaxed inline-block mr-4 whitespace-nowrap  text-black"
 
                         >
                             <span><img src={logo} className='w-32' /></span>
                         </Link>
                         <button
-                            className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                            className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent opacity-70 rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
                         >
@@ -56,33 +56,33 @@ const BottomNavbar: React.FC<NavbarProps> = ({ activeLink }) => {
                         <ul className="flex flex-col lg:flex-row list-none py-2 lg:py-0 space-y-3 lg:space-y-0 lg:ml-auto">
                             <li className='nav-item'>
                                 <Link to={"/"} className="px-7 flex items-center text-xs uppercase font-medium leading-snug "                                                                 >
-                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'home' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>HOME</span>
+                                    <span className={`py-1 border-b-2 font-bold hover:text-blue-700 hover:border-blue-700  hover:opacity-100  ${activeLink === 'home' ? 'text-blue-700 opacity-100 border-blue-700' : 'border-transparent opacity-70'}`}>HOME</span>
                                 </Link>
 
                             </li>
                             <li className='nav-item'>
                                 <Link to={"/about"} className="px-7 flex items-center text-xs uppercase font-medium leading-snug ">
-                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'about' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>ABOUT US</span>
+                                    <span className={`py-1 border-b-2 font-bold hover:text-blue-700 hover:border-blue-700  hover:opacity-100  ${activeLink === 'about' ? 'text-blue-700 opacity-100 border-blue-700' : 'border-transparent opacity-70'}`}>ABOUT US</span>
                                 </Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to={"/gallery"} className="px-7  flex items-center text-xs uppercase font-medium leading-snug ">
-                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'gallery' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>GALLERY</span>
+                                    <span className={`py-1 border-b-2 font-bold hover:text-blue-700 hover:border-blue-700  hover:opacity-100  ${activeLink === 'gallery' ? 'text-blue-700 opacity-100 border-blue-700' : 'border-transparent opacity-70'}`}>GALLERY</span>
                                 </Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to={"/services"} className="px-7  flex items-center text-xs uppercase font-medium leading-snug ">
-                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'services' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>SERVICES</span>
+                                    <span className={`py-1 border-b-2 font-bold hover:text-blue-700 hover:border-blue-700  hover:opacity-100  ${activeLink === 'services' ? 'text-blue-700 opacity-100 border-blue-700' : 'border-transparent opacity-70'}`}>SERVICES</span>
                                 </Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to={'/projects'} className="px-7  flex items-center text-xs uppercase font-medium leading-snug ">
-                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'projects' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>PROJECTS</span>
+                                    <span className={`py-1 border-b-2 font-bold hover:text-blue-700 hover:border-blue-700  hover:opacity-100  ${activeLink === 'projects' ? 'text-blue-700 opacity-100 border-blue-700' : 'border-transparent opacity-70'}`}>PROJECTS</span>
                                 </Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to={'/contact'} className="ps-7  flex items-center text-xs uppercase font-medium leading-snug ">
-                                    <span className={`py-1 border-b-2 hover:border-slate-900 hover:text-slate-900  ${activeLink === 'contact' ? 'text-slate-900 font-bold border-slate-900' : 'border-transparent'}`}>CONTACT</span>
+                                    <span className={`py-1 border-b-2 font-bold hover:text-blue-700 hover:border-blue-700  hover:opacity-100  ${activeLink === 'contact' ? 'text-blue-700 opacity-100 border-blue-700' : 'border-transparent opacity-70'}`}>CONTACT</span>
                                 </Link>
                             </li>
                         </ul>
